@@ -5,12 +5,15 @@ spring:
   ai:
     openai:
       api-key: ${OPENAI_API_KEY}
-      chat:
-        options:
-          model: gpt-3.5-turbo
+#      chat:
+#        options:
+#          model: gpt-3.5-turbo
+#          model: gpt-4o-mini
 
 
 logging:
   pattern:
     console: "%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n"
-
+  level:
+    root: debug
+    web: debug
