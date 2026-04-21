@@ -39,7 +39,7 @@ public class ChatController {
         return switch (model) {
             case "3.5" -> "gpt-3.5-turbo";
             case "4o" -> "gpt-4o-mini";
-            default -> throw new IllegalArgumentException("Modelo inválido");
+            default -> throw new IllegalArgumentException("Invalid LLM Model selected");
         };
     }
 }
